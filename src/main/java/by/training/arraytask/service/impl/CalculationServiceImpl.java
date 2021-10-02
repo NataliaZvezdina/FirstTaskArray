@@ -5,9 +5,12 @@ import by.training.arraytask.exception.CustomArrayException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import by.training.arraytask.service.CustomArrayCalculationService;
+import by.training.arraytask.service.CalculationService;
 
-public class CustomArrayCalculationServiceImpl implements CustomArrayCalculationService {
+import java.util.Arrays;
+import java.util.OptionalDouble;
+
+public class CalculationServiceImpl implements CalculationService {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
@@ -24,7 +27,7 @@ public class CustomArrayCalculationServiceImpl implements CustomArrayCalculation
 
         int[] array = customArray.getArray();
         int sum = calculateTotalSum(customArray);
-        double average = (double) (sum / customArray.size());
+        double average = ((double) sum) / customArray.size();
 
         logger.log(Level.INFO, "Calculated average of elements: " + average);
         return average;
@@ -100,5 +103,80 @@ public class CustomArrayCalculationServiceImpl implements CustomArrayCalculation
 
         logger.log(Level.INFO, "Number of positive elements: " + numberOfPositive);
         return numberOfPositive;
+    }
+
+    @Override
+    public double calculateAverageUsingStream(CustomArray customArray) throws CustomArrayException {
+        if (customArray == null) {
+            logger.log(Level.ERROR, "Average cannot be calculated. Input parameter is null");
+            throw new CustomArrayException("Average cannot be calculated. Input parameter is null");
+        }
+
+        if (customArray.size() == 0) {
+            logger.log(Level.ERROR, "Average cannot be calculated. Input parameter is empty");
+            throw new CustomArrayException("Average cannot be calculated. Input parameter is empty");
+        }
+
+        int[] array = customArray.getArray();
+        OptionalDouble average = Arrays.stream(array).average();
+
+        return average.getAsDouble();
+    }
+
+    @Override
+    public int calculateTotalSumUsingStream(CustomArray customArray) throws CustomArrayException {
+        if (customArray == null) {
+            logger.log(Level.ERROR, "Sum cannot be calculated. Input parameter is null");
+            throw new CustomArrayException("Sum cannot be calculated. Input parameter is null");
+        }
+
+        if (customArray.size() == 0) {
+            logger.log(Level.INFO, "Calculated total sum of elements: " + 0 + " as CustomArray is empty");
+            return 0;
+        }
+
+        int[] array = customArray.getArray();
+        int sum = Arrays.stream(array).sum();
+
+        logger.log(Level.INFO, "Calculated total sum of elements: " + sum);
+        return sum;
+    }
+
+    @Override
+    public int countNegativeElementsUsingStream(CustomArray customArray) throws CustomArrayException {
+        if (customArray == null) {
+            logger.log(Level.ERROR, "Calculation cannot be done. Input parameter is null");
+            throw new CustomArrayException("Calculation cannot be done. Input parameter is null");
+        }
+
+        if (customArray.size() == 0) {
+            logger.log(Level.INFO, "Number of negative elements: " + 0 + " as CustomArray is empty");
+            return 0;
+        }
+
+        int[] array = customArray.getArray();
+        long numberOfNegative = Arrays.stream(array).filter(value -> value < 0).count();
+
+        logger.log(Level.INFO, "Number of negative elements: " + numberOfNegative);
+        return (int) numberOfNegative;
+    }
+
+    @Override
+    public int countPositiveElementsUsingStream(CustomArray customArray) throws CustomArrayException {
+        if (customArray == null) {
+            logger.log(Level.ERROR, "Calculation cannot be done. Input parameter is null");
+            throw new CustomArrayException("Calculation cannot be done. Input parameter is null");
+        }
+
+        if (customArray.size() == 0) {
+            logger.log(Level.INFO, "Number of positive elements: " + 0 + " as CustomArray is empty");
+            return 0;
+        }
+
+        int[] array = customArray.getArray();
+        long numberOfPositive = Arrays.stream(array).filter(value -> value > 0).count();
+
+        logger.log(Level.INFO, "Number of positive elements: " + numberOfPositive);
+        return (int) numberOfPositive;
     }
 }

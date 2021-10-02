@@ -5,9 +5,11 @@ import by.training.arraytask.exception.CustomArrayException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import by.training.arraytask.service.CustomArrayReplaceService;
+import by.training.arraytask.service.ReplaceService;
 
-public class CustomArrayReplaceServiceImpl implements CustomArrayReplaceService {
+import java.util.Arrays;
+
+public class ReplaceServiceImpl implements ReplaceService {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
@@ -27,4 +29,5 @@ public class CustomArrayReplaceServiceImpl implements CustomArrayReplaceService 
         customArray.setArray(array);
         logger.log(Level.INFO, "Element by index: " + index + " was replaced on: " + newElement);
     }
+
 }

@@ -1,0 +1,8 @@
+2021-09-30 20:55:50 [main] [findMax] [33] INFO  training.arraytask.service.impl.CustomArrayFindServiceImpl - Found max element: 22
+2021-09-30 20:55:50 [main] [findMin] [57] INFO  training.arraytask.service.impl.CustomArrayFindServiceImpl - Found min element: -5
+2021-09-30 20:55:50 [main] [calculateTotalSum] [51] INFO  training.arraytask.service.impl.CustomArrayCalculationServiceImpl - Calculated total sum of elements: 43
+2021-09-30 20:55:50 [main] [calculateAverage] [29] INFO  training.arraytask.service.impl.CustomArrayCalculationServiceImpl - Calculated average of elements: 4.0
+2021-09-30 20:55:50 [main] [calculateTotalSum] [51] INFO  training.arraytask.service.impl.CustomArrayCalculationServiceImpl - Calculated total sum of elements: 43
+2021-09-30 20:55:50 [main] [countNegativeElements] [76] INFO  training.arraytask.service.impl.CustomArrayCalculationServiceImpl - Number of negative elements: 3
+2021-09-30 20:55:50 [main] [countPositiveElements] [101] INFO  training.arraytask.service.impl.CustomArrayCalculationServiceImpl - Number of positive elements: 5
+2021-09-30 20:55:50 [main] [replaceElementByIndex] [28] INFO  training.arraytask.service.impl.CustomArrayReplaceServiceImpl - Element by index: 2 was replaced on: 12

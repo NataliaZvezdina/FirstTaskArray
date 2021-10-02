@@ -5,9 +5,12 @@ import by.training.arraytask.exception.CustomArrayException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import by.training.arraytask.service.CustomArrayFindService;
+import by.training.arraytask.service.FindService;
 
-public class CustomArrayFindServiceImpl implements CustomArrayFindService {
+import java.util.Arrays;
+import java.util.OptionalInt;
+
+public class FindServiceImpl implements FindService {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
@@ -56,5 +59,45 @@ public class CustomArrayFindServiceImpl implements CustomArrayFindService {
 
         logger.log(Level.INFO, "Found min element: " + min);
         return min;
+    }
+
+    @Override
+    public int findMaxUsingStream(CustomArray customArray) throws CustomArrayException {
+        if (customArray == null) {
+            logger.log(Level.ERROR, "Max element cannot be found. Input parameter is null");
+            throw new CustomArrayException("Max element cannot be found. Input parameter is null");
+        }
+
+        if (customArray.size() == 0) {
+            logger.log(Level.ERROR, "Max element cannot be found. Input parameter is empty");
+            throw new CustomArrayException("Max element cannot be found. Input parameter is empty");
+        }
+
+
+        int[] array = customArray.getArray();
+        OptionalInt max = Arrays.stream(array).max();
+
+        logger.log(Level.INFO, "Found max element: " + max);
+        return max.getAsInt();
+    }
+
+    @Override
+    public int findMinUsingStream(CustomArray customArray) throws CustomArrayException {
+        if (customArray == null) {
+            logger.log(Level.ERROR, "Min element cannot be found. Input parameter is null");
+            throw new CustomArrayException("Min element cannot be found. Input parameter is null");
+        }
+
+        if (customArray.size() == 0) {
+            logger.log(Level.ERROR, "Min element cannot be found. Input parameter is empty");
+            throw new CustomArrayException("Min element cannot be found. Input parameter is empty");
+        }
+
+        int[] array = customArray.getArray();
+        OptionalInt min = Arrays.stream(array).min();
+
+
+        logger.log(Level.INFO, "Found min element: " + min);
+        return min.getAsInt();
     }
 }
