@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6da44460-d1fe-4337-b59f-94875bb68fe1" name="Changes" comment="Remove unused imports">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/reader/CustomFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/reader/CustomFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CustomFileReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CustomFileReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/reader/CustomFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/reader/CustomFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomFileReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CustomFileReaderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CustomParserTest.class" afterDir="false" />
+    <list default="true" id="6da44460-d1fe-4337-b59f-94875bb68fe1" name="Changes" comment="Change absolute to relative filepath">
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculationServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CustomFileReaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CustomParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CustomValidatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReplaceServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SortServiceImplTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632996694593</updated>
       <workItem from="1632996696054" duration="34260000" />
-      <workItem from="1633129408681" duration="22933000" />
+      <workItem from="1633129408681" duration="23413000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1633063323605</created>
@@ -142,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633192062865</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change absolute to relative filepath">
+      <created>1633194630385</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633194630385</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +196,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Remove unused imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unused imports" />
+    <MESSAGE value="Change absolute to relative filepath" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change absolute to relative filepath" />
   </component>
 </project>
