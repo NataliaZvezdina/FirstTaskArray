@@ -9,11 +9,11 @@ import java.util.List;
 
 public class CustomFileReaderTest {
     private CustomFileReader reader;
-    private static final String TEST1_FILE_PATH = "C:/Users/natal/IdeaProjects/task1/src/test/resources/test1.txt";
-    private static final String TEST2_FILE_PATH = "C:/Users/natal/IdeaProjects/task1/src/test/resources/test2.txt";
+    private static final String TEST1_FILE_PATH = "src/test/resources/test1.txt";
+    private static final String TEST2_FILE_PATH = "src/test/resources/test2.txt";
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         reader = new CustomFileReader();
     }
 
