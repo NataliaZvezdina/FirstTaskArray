@@ -1,7 +1,5 @@
-import by.training.arraytask.entity.CustomArray;
 import by.training.arraytask.exception.CustomArrayException;
 import by.training.arraytask.parser.CustomParser;
-import by.training.arraytask.validator.CustomValidator;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

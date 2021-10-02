@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6da44460-d1fe-4337-b59f-94875bb68fe1" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/application/ApplicationDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/application/ApplicationDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/CustomArrayFindService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/CustomArrayReplaceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/CustomArrayCalculationServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/CustomArrayFindServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/CustomArrayReplaceServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/application/ApplicationDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/application/ApplicationDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/CustomArrayCalculationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/CustomArrayFindService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/CustomArrayReplaceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/impl/CustomArrayCalculationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/impl/CustomArrayFindServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/impl/CustomArrayReplaceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CustomParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CustomParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632996694593</updated>
       <workItem from="1632996696054" duration="34260000" />
-      <workItem from="1633129408681" duration="19864000" />
+      <workItem from="1633129408681" duration="20535000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1633063323605</created>
