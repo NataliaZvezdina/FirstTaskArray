@@ -1,16 +1,19 @@
+package by.training.arraytask.service;
+
 import by.training.arraytask.entity.CustomArray;
 import by.training.arraytask.exception.CustomArrayException;
 import by.training.arraytask.service.impl.ReplaceServiceImpl;
+import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.function.ThrowingRunnable;
 
 public class ReplaceServiceImplTest {
-    private ReplaceServiceImpl service;
+    private static ReplaceServiceImpl service;
 
-    @Before
-    public void setUp() {
+    @BeforeClass
+    public static void setUp() {
         service = new ReplaceServiceImpl();
     }
 
@@ -69,5 +72,10 @@ public class ReplaceServiceImplTest {
 
         // then
         Assert.assertThrows(CustomArrayException.class, expectedThrown);
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        service = null;
     }
 }

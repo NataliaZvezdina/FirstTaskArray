@@ -61,7 +61,8 @@ public class CustomFileReader {
             throw new CustomArrayException("Input filepath is null");
         }
 
-        File file = new File(filePath);
+        String absoluteFilePath = new File(filePath).getAbsolutePath();
+        File file = new File(absoluteFilePath);
 
         if (!file.exists()) {
             logger.log(Level.ERROR, "File by pathname: " + filePath + " doesn't exist");

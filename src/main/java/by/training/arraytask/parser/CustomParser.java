@@ -6,13 +6,13 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.lang.invoke.VarHandle;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class CustomParser {
     private static final Logger logger = LogManager.getLogger();
-    private CustomValidator validator = new CustomValidator();
     private static final String DELIMITER = " ";
 
 
@@ -24,7 +24,7 @@ public class CustomParser {
 
         List<Integer> numbers = new ArrayList<>();
         for (String line : lines) {
-            if (validator.checkLine(line)) {
+            if (CustomValidator.checkLine(line)) {
                 String[] stringNumbers = line.split(DELIMITER);
                 for (String stringNumber : stringNumbers) {
                     int number = Integer.parseInt(stringNumber);
@@ -49,8 +49,8 @@ public class CustomParser {
         }
 
         int[] resultNumbers = lines.stream()
-                .filter(line -> validator.checkLine(line))
-                .flatMap(line -> Arrays.stream(line.split(" ")))
+                .filter(CustomValidator::checkLine)
+                .flatMap(line -> Arrays.stream(line.split(DELIMITER)))
                 .mapToInt(Integer::parseInt)
                 .toArray();
 

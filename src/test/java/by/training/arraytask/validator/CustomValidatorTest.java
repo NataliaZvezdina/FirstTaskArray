@@ -1,16 +1,9 @@
-import by.training.arraytask.entity.CustomArray;
-import by.training.arraytask.validator.CustomValidator;
+package by.training.arraytask.validator;
+
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class CustomValidatorTest {
-    private CustomValidator validator;
-
-    @Before
-    public void setUp() throws Exception {
-        validator = new CustomValidator();
-    }
 
     @Test
     public void testCheckLine_whenInputLineCorrect_thenReturnTrue() {
@@ -19,7 +12,7 @@ public class CustomValidatorTest {
         boolean expected = true;
 
         // when
-        boolean actual = validator.checkLine(correctLine);
+        boolean actual = CustomValidator.checkLine(correctLine);
 
         // then
         Assert.assertEquals(expected, actual);
@@ -32,7 +25,7 @@ public class CustomValidatorTest {
         boolean expected = false;
 
         // when
-        boolean actual = validator.checkLine(incorrectLine);
+        boolean actual = CustomValidator.checkLine(incorrectLine);
 
         // then
         Assert.assertEquals(expected, actual);

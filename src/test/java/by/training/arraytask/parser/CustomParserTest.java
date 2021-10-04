@@ -1,7 +1,9 @@
+package by.training.arraytask.parser;
+
 import by.training.arraytask.exception.CustomArrayException;
-import by.training.arraytask.parser.CustomParser;
+import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.function.ThrowingRunnable;
 
@@ -9,10 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomParserTest {
-    private CustomParser parser;
+    private static CustomParser parser;
 
-    @Before
-    public void setUp() throws Exception {
+    @BeforeClass
+    public static void setUp() {
         parser = new CustomParser();
     }
 
@@ -70,5 +72,10 @@ public class CustomParserTest {
 
         // then
         Assert.assertThrows(CustomArrayException.class, expectedThrown);
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        parser = null;
     }
 }

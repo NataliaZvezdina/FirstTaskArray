@@ -9,7 +9,7 @@ public class CustomArray {
     public CustomArray() {}
 
     public CustomArray(int... array) {
-        this.array = array;
+        this.array = array.clone();
     }
 
     public int size() {
@@ -17,11 +17,11 @@ public class CustomArray {
     }
 
     public int[] getArray() {
-        return Arrays.copyOf(array, array.length);
+        return array.clone();
     }
 
     public void setArray(int[] array) {
-        this.array = array;
+        this.array = array.clone();
     }
 
     @Override

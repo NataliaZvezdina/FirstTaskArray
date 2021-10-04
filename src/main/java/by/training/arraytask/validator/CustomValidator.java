@@ -6,9 +6,10 @@ import org.apache.logging.log4j.Logger;
 
 public class CustomValidator {
     private static final Logger logger = LogManager.getLogger();
+    private static final String REG_EX = "^-?\\d+(\\s(-?\\d+))*$";
 
-    public boolean checkLine(String line) {
+    public static boolean checkLine(String line) {
         logger.log(Level.INFO, "Checking string line: " + line + " on validity");
-        return line.matches("^-?\\d+(\\s(-?\\d+))*$");
+        return line.matches(REG_EX);
     }
 }
