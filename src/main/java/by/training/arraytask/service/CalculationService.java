@@ -1,23 +1,23 @@
 package by.training.arraytask.service;
 
 import by.training.arraytask.entity.CustomArray;
-import by.training.arraytask.exception.CustomArrayException;
+import java.util.OptionalDouble;
 
 public interface CalculationService {
 
-    double calculateAverage(CustomArray customArray) throws CustomArrayException;
+    double calculateAverage(CustomArray customArray);
 
-    int calculateTotalSum(CustomArray customArray) throws CustomArrayException;
+    int calculateTotalSum(CustomArray customArray);
 
-    int countNegativeElements(CustomArray customArray) throws CustomArrayException;
+    int countNegativeElements(CustomArray customArray);
 
-    int countPositiveElements(CustomArray customArray) throws CustomArrayException;
+    int countPositiveElements(CustomArray customArray);
 
-    double calculateAverageUsingStream(CustomArray customArray) throws CustomArrayException;
+    OptionalDouble calculateAverageUsingStream(CustomArray customArray);
 
-    int calculateTotalSumUsingStream(CustomArray customArray) throws CustomArrayException;
+    int calculateTotalSumUsingStream(CustomArray customArray);
 
-    int countNegativeElementsUsingStream(CustomArray customArray) throws CustomArrayException;
+    int countNegativeElementsUsingStream(CustomArray customArray);
 
-    int countPositiveElementsUsingStream(CustomArray customArray) throws CustomArrayException;
+    int countPositiveElementsUsingStream(CustomArray customArray);
 }

@@ -1,1 +1,0 @@
-2021-09-30 19:50:17 [main] [replaceElementByIndex] [28] INFO  by.training.arraytask.service.impl.ReplaceServiceImpl - Element by index 2 was replaced on: 10

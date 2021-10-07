@@ -1,15 +1,15 @@
 package by.training.arraytask.service;
 
 import by.training.arraytask.entity.CustomArray;
-import by.training.arraytask.exception.CustomArrayException;
+import java.util.OptionalInt;
 
 public interface FindService {
 
-    int findMax(CustomArray customArray) throws CustomArrayException;
+    int findMax(CustomArray customArray);
 
-    int findMin(CustomArray customArray) throws CustomArrayException;
+    int findMin(CustomArray customArray);
 
-    int findMaxUsingStream(CustomArray customArray) throws CustomArrayException;
+    OptionalInt findMaxUsingStream(CustomArray customArray);
 
-    int findMinUsingStream(CustomArray customArray) throws CustomArrayException;
+    OptionalInt findMinUsingStream(CustomArray customArray);
 }

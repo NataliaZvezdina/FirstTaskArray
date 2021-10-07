@@ -1,6 +1,7 @@
 package by.training.arraytask.parser;
 
 import by.training.arraytask.exception.CustomArrayException;
+
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -11,15 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomParserTest {
-    private static CustomParser parser;
-
-    @BeforeClass
-    public static void setUp() {
-        parser = new CustomParser();
-    }
+    private CustomParser parser = new CustomParser();
 
     @Test
-    public void testParseLines_happyPath() throws CustomArrayException {
+    public void testParseLines() throws CustomArrayException {
         // given
         List<String> inputLines = new ArrayList<>();
         inputLines.add("2 7 9 12 -33 -5");
@@ -35,7 +31,7 @@ public class CustomParserTest {
     }
 
     @Test
-    public void testParseLines_whenInputListIsNull_thenThrowCustomArrayException() {
+    public void testParseLinesExceptionExpected() {
         // given
         List<String> inputLines = null;
 
@@ -47,7 +43,7 @@ public class CustomParserTest {
     }
 
     @Test
-    public void testParseLinesUsingStream_happyPath() throws CustomArrayException {
+    public void testParseLinesUsingStream() throws CustomArrayException {
         // given
         List<String> inputLines = new ArrayList<>();
         inputLines.add("2 7 9 12 -33 -5");
@@ -63,7 +59,7 @@ public class CustomParserTest {
     }
 
     @Test
-    public void testParseLinesUsingStream_whenInputListIsNull_thenThrowCustomArrayException() {
+    public void testParseLinesUsingStreamExceptionExpected() {
         // given
         List<String> inputLines = null;
 
@@ -72,10 +68,5 @@ public class CustomParserTest {
 
         // then
         Assert.assertThrows(CustomArrayException.class, expectedThrown);
-    }
-
-    @AfterClass
-    public static void tearDown() {
-        parser = null;
     }
 }

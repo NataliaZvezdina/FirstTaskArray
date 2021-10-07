@@ -1,7 +1,6 @@
 package by.training.arraytask.service.impl;
 
 import by.training.arraytask.entity.CustomArray;
-import by.training.arraytask.exception.CustomArrayException;
 import by.training.arraytask.service.SortService;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -13,12 +12,7 @@ public class SortServiceImpl implements SortService {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
-    public void bubbleSort(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Sorting cannot be done. Input parameter is null");
-            throw new CustomArrayException("Sorting cannot be done. Input parameter is null");
-        }
-
+    public void bubbleSort(CustomArray customArray) {
         int[] array = customArray.getArray();
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
@@ -35,12 +29,7 @@ public class SortServiceImpl implements SortService {
     }
 
     @Override
-    public void selectionSort(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Sorting cannot be done. Input parameter is null");
-            throw new CustomArrayException("Sorting cannot be done. Input parameter is null");
-        }
-
+    public void selectionSort(CustomArray customArray) {
         int[] array = customArray.getArray();
         for (int i = 0; i < array.length; i++) {
             int min = array[i];
@@ -63,12 +52,7 @@ public class SortServiceImpl implements SortService {
     }
 
     @Override
-    public void insertionSort(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Sorting cannot be done. Input parameter is null");
-            throw new CustomArrayException("Sorting cannot be done. Input parameter is null");
-        }
-
+    public void insertionSort(CustomArray customArray) {
         int[] array = customArray.getArray();
         int key;
         for (int i = 1; i < array.length; i++) {
@@ -86,12 +70,7 @@ public class SortServiceImpl implements SortService {
     }
 
     @Override
-    public void sortUsingStream(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Sorting cannot be done. Input parameter is null");
-            throw new CustomArrayException("Sorting cannot be done. Input parameter is null");
-        }
-
+    public void sortUsingStream(CustomArray customArray) {
         int[] array = customArray.getArray();
         int[] sortedArray = Arrays.stream(array).sorted().toArray();
 

@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.lang.invoke.VarHandle;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,9 +21,10 @@ public class CustomParser {
             throw new CustomArrayException("Cannot parse. Input parameter is null");
         }
 
+        CustomValidator validator = CustomValidator.getInstance();
         List<Integer> numbers = new ArrayList<>();
         for (String line : lines) {
-            if (CustomValidator.checkLine(line)) {
+            if (validator.checkLine(line)) {
                 String[] stringNumbers = line.split(DELIMITER);
                 for (String stringNumber : stringNumbers) {
                     int number = Integer.parseInt(stringNumber);
@@ -48,8 +48,9 @@ public class CustomParser {
             throw new CustomArrayException("Cannot parse. Input parameter is null");
         }
 
+        CustomValidator validator = CustomValidator.getInstance();
         int[] resultNumbers = lines.stream()
-                .filter(CustomValidator::checkLine)
+                .filter(validator::checkLine)
                 .flatMap(line -> Arrays.stream(line.split(DELIMITER)))
                 .mapToInt(Integer::parseInt)
                 .toArray();

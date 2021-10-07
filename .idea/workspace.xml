@@ -4,14 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6da44460-d1fe-4337-b59f-94875bb68fe1" name="Changes" comment="Change tests files structure">
+    <list default="true" id="6da44460-d1fe-4337-b59f-94875bb68fe1" name="Changes" comment="Fix tests">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_api.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/entity/CustomArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/exception/CustomArrayException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/exception/CustomArrayException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2021-09-30/2021-09-30_19-50_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2021-09-30/2021-09-30_19-53_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2021-09-30/2021-09-30_20-18_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2021-09-30/2021-09-30_20-20_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2021-09-30/2021-09-30_20-55_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/application/ApplicationDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/application/ApplicationDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/parser/CustomParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/parser/CustomParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/reader/CustomFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/reader/CustomFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/CalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/CalculationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/FindService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/FindService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/SortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/SortService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/CalculationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/CalculationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/FindServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/FindServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/ReplaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/ReplaceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/SortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/service/impl/SortServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/arraytask/validator/CustomValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/arraytask/validator/CustomValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/training/arraytask/parser/CustomParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/training/arraytask/parser/CustomParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/training/arraytask/reader/CustomFileReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/training/arraytask/reader/CustomFileReaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/training/arraytask/service/CalculationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/training/arraytask/service/CalculationServiceImplTest.java" afterDir="false" />
@@ -20,17 +35,17 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/by/training/arraytask/service/SortServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/training/arraytask/service/SortServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/training/arraytask/validator/CustomValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/training/arraytask/validator/CustomValidatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/application/ApplicationDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/application/ApplicationDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/exception/CustomArrayException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/exception/CustomArrayException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/entity/CustomArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/entity/CustomArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/parser/CustomParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/parser/CustomParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/reader/CustomFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/reader/CustomFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/validator/CustomValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/validator/CustomValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CalculationServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomFileReaderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomParserTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomValidatorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FindServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ReplaceServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SortServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/CalculationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/CalculationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/FindService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/FindService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/impl/CalculationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/impl/CalculationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/impl/FindServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/arraytask/service/impl/FindServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/by/training/arraytask/parser/CustomParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/training/arraytask/parser/CustomParserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/by/training/arraytask/reader/CustomFileReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/training/arraytask/reader/CustomFileReaderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/by/training/arraytask/service/CalculationServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/training/arraytask/service/CalculationServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/by/training/arraytask/service/FindServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/training/arraytask/service/FindServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,36 +76,54 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\natal\IdeaProjects\task1\src\main\resources\data" />
       <recent name="C:\Users\natal\IdeaProjects\task1\src\main\resources" />
+      <recent name="C:\Users\natal\IdeaProjects\task1" />
+      <recent name="C:\Users\natal\IdeaProjects\task1\src\main\resources\data" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="by.training.arraytask.service" />
       <recent name="by.training.arraytask" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculationServiceImplTest">
-    <configuration name="CalculationServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ApplicationDemo">
+    <configuration name="ApplicationDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.training.arraytask.application.ApplicationDemo" />
       <module name="task1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.training.arraytask.service.*" />
+          <option name="PATTERN" value="by.training.arraytask.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.training.arraytask.service" />
-      <option name="MAIN_CLASS_NAME" value="by.training.arraytask.service.CalculationServiceImplTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomFileReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.training.arraytask.reader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.training.arraytask.reader" />
+      <option name="MAIN_CLASS_NAME" value="by.training.arraytask.reader.CustomFileReaderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,58 +144,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomParserTest.testParseLines" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.training.arraytask.validator.*" />
+          <option name="PATTERN" value="by.training.arraytask.parser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.training.arraytask.validator" />
-      <option name="MAIN_CLASS_NAME" value="by.training.arraytask.validator.CustomValidatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="by.training.arraytask.parser" />
+      <option name="MAIN_CLASS_NAME" value="by.training.arraytask.parser.CustomParserTest" />
+      <option name="METHOD_NAME" value="testParseLines" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomParserTest.testParseLinesUsingStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.training.arraytask.service.*" />
+          <option name="PATTERN" value="by.training.arraytask.parser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.training.arraytask.service" />
-      <option name="MAIN_CLASS_NAME" value="by.training.arraytask.service.FindServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.training.arraytask.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.training.arraytask.service" />
-      <option name="MAIN_CLASS_NAME" value="by.training.arraytask.service.SortServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="by.training.arraytask.parser" />
+      <option name="MAIN_CLASS_NAME" value="by.training.arraytask.parser.CustomParserTest" />
+      <option name="METHOD_NAME" value="testParseLinesUsingStream" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalculationServiceImplTest" />
-        <item itemvalue="JUnit.FindServiceImplTest" />
-        <item itemvalue="JUnit.SortServiceImplTest" />
+        <item itemvalue="Application.ApplicationDemo" />
+        <item itemvalue="JUnit.CustomFileReaderTest" />
         <item itemvalue="JUnit.CustomParserTest" />
-        <item itemvalue="JUnit.CustomValidatorTest" />
+        <item itemvalue="JUnit.CustomParserTest.testParseLinesUsingStream" />
+        <item itemvalue="JUnit.CustomParserTest.testParseLines" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +197,12 @@
       <workItem from="1632996696054" duration="34260000" />
       <workItem from="1633129408681" duration="24138000" />
       <workItem from="1633204150353" duration="1655000" />
-      <workItem from="1633278820323" duration="9729000" />
+      <workItem from="1633278820323" duration="12259000" />
+      <workItem from="1633393627754" duration="3410000" />
+      <workItem from="1633417277382" duration="15944000" />
+      <workItem from="1633605250625" duration="446000" />
+      <workItem from="1633605770836" duration="7613000" />
+      <workItem from="1633628677173" duration="4395000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1633063323605</created>
@@ -214,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633195114375</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix tests">
+      <created>1633388804744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633388804744</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +294,7 @@
     <MESSAGE value="Remove unused imports" />
     <MESSAGE value="Change absolute to relative filepath" />
     <MESSAGE value="Change tests files structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change tests files structure" />
+    <MESSAGE value="Fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix tests" />
   </component>
 </project>

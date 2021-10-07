@@ -14,17 +14,7 @@ public class CalculationServiceImpl implements CalculationService {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
-    public double calculateAverage(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Average cannot be calculated. Input parameter is null");
-            throw new CustomArrayException("Average cannot be calculated. Input parameter is null");
-        }
-
-        if (customArray.size() == 0) {
-            logger.log(Level.ERROR, "Average cannot be calculated. Input parameter is empty");
-            throw new CustomArrayException("Average cannot be calculated. Input parameter is empty");
-        }
-
+    public double calculateAverage(CustomArray customArray) {
         int[] array = customArray.getArray();
         int sum = calculateTotalSum(customArray);
         double average = ((double) sum) / customArray.size();
@@ -34,17 +24,7 @@ public class CalculationServiceImpl implements CalculationService {
     }
 
     @Override
-    public int calculateTotalSum(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Sum cannot be calculated. Input parameter is null");
-            throw new CustomArrayException("Sum cannot be calculated. Input parameter is null");
-        }
-
-        if (customArray.size() == 0) {
-            logger.log(Level.INFO, "Calculated total sum of elements: " + 0 + " as CustomArray is empty");
-            return 0;
-        }
-
+    public int calculateTotalSum(CustomArray customArray) {
         int[] array = customArray.getArray();
         int sum = 0;
         for (int element : array) {
@@ -56,19 +36,8 @@ public class CalculationServiceImpl implements CalculationService {
     }
 
     @Override
-    public int countNegativeElements(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Calculation cannot be done. Input parameter is null");
-            throw new CustomArrayException("Calculation cannot be done. Input parameter is null");
-        }
-
-        if (customArray.size() == 0) {
-            logger.log(Level.INFO, "Number of negative elements: " + 0 + " as CustomArray is empty");
-            return 0;
-        }
-
+    public int countNegativeElements(CustomArray customArray) {
         int[] array = customArray.getArray();
-
         int numberOfNegative = 0;
         for (int element : array) {
             if (element < 0) {
@@ -81,19 +50,8 @@ public class CalculationServiceImpl implements CalculationService {
     }
 
     @Override
-    public int countPositiveElements(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Calculation cannot be done. Input parameter is null");
-            throw new CustomArrayException("Calculation cannot be done. Input parameter is null");
-        }
-
-        if (customArray.size() == 0) {
-            logger.log(Level.INFO, "Number of positive elements: " + 0 + " as CustomArray is empty");
-            return 0;
-        }
-
+    public int countPositiveElements(CustomArray customArray) {
         int[] array = customArray.getArray();
-
         int numberOfPositive = 0;
         for (int element : array) {
             if (element > 0) {
@@ -106,35 +64,16 @@ public class CalculationServiceImpl implements CalculationService {
     }
 
     @Override
-    public double calculateAverageUsingStream(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Average cannot be calculated. Input parameter is null");
-            throw new CustomArrayException("Average cannot be calculated. Input parameter is null");
-        }
-
-        if (customArray.size() == 0) {
-            logger.log(Level.ERROR, "Average cannot be calculated. Input parameter is empty");
-            throw new CustomArrayException("Average cannot be calculated. Input parameter is empty");
-        }
-
+    public OptionalDouble calculateAverageUsingStream(CustomArray customArray) {
         int[] array = customArray.getArray();
         OptionalDouble average = Arrays.stream(array).average();
 
-        return average.getAsDouble();
+        logger.log(Level.INFO, "Calculated average of elements: " + average.getAsDouble());
+        return average;
     }
 
     @Override
-    public int calculateTotalSumUsingStream(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Sum cannot be calculated. Input parameter is null");
-            throw new CustomArrayException("Sum cannot be calculated. Input parameter is null");
-        }
-
-        if (customArray.size() == 0) {
-            logger.log(Level.INFO, "Calculated total sum of elements: " + 0 + " as CustomArray is empty");
-            return 0;
-        }
-
+    public int calculateTotalSumUsingStream(CustomArray customArray) {
         int[] array = customArray.getArray();
         int sum = Arrays.stream(array).sum();
 
@@ -143,17 +82,7 @@ public class CalculationServiceImpl implements CalculationService {
     }
 
     @Override
-    public int countNegativeElementsUsingStream(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Calculation cannot be done. Input parameter is null");
-            throw new CustomArrayException("Calculation cannot be done. Input parameter is null");
-        }
-
-        if (customArray.size() == 0) {
-            logger.log(Level.INFO, "Number of negative elements: " + 0 + " as CustomArray is empty");
-            return 0;
-        }
-
+    public int countNegativeElementsUsingStream(CustomArray customArray) {
         int[] array = customArray.getArray();
         long numberOfNegative = Arrays.stream(array).filter(value -> value < 0).count();
 
@@ -162,17 +91,7 @@ public class CalculationServiceImpl implements CalculationService {
     }
 
     @Override
-    public int countPositiveElementsUsingStream(CustomArray customArray) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Calculation cannot be done. Input parameter is null");
-            throw new CustomArrayException("Calculation cannot be done. Input parameter is null");
-        }
-
-        if (customArray.size() == 0) {
-            logger.log(Level.INFO, "Number of positive elements: " + 0 + " as CustomArray is empty");
-            return 0;
-        }
-
+    public int countPositiveElementsUsingStream(CustomArray customArray) {
         int[] array = customArray.getArray();
         long numberOfPositive = Arrays.stream(array).filter(value -> value > 0).count();
 

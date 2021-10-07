@@ -6,10 +6,18 @@ import org.apache.logging.log4j.Logger;
 
 public class CustomValidator {
     private static final Logger logger = LogManager.getLogger();
-    private static final String REG_EX = "^-?\\d+(\\s(-?\\d+))*$";
 
-    public static boolean checkLine(String line) {
+    private static CustomValidator instance = new CustomValidator();
+    private static final String LINE_PATTERN = "^-?\\d+(\\s(-?\\d+))*$";
+
+    private CustomValidator() {}
+
+    public static CustomValidator getInstance() {
+        return instance;
+    }
+
+    public boolean checkLine(String line) {
         logger.log(Level.INFO, "Checking string line: " + line + " on validity");
-        return line.matches(REG_EX);
+        return line.matches(LINE_PATTERN);
     }
 }

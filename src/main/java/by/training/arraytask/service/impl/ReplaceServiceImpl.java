@@ -14,11 +14,6 @@ public class ReplaceServiceImpl implements ReplaceService {
 
     @Override
     public void replaceElementByIndex(CustomArray customArray, int index, int newElement) throws CustomArrayException {
-        if (customArray == null) {
-            logger.log(Level.ERROR, "Error, input parameter CustomArray is null");
-            throw new CustomArrayException("Replacement cannot be done. Input parameter CustomArray is null");
-        }
-
         if (index < 0 || index > (customArray.size() - 1)) {
             logger.log(Level.ERROR, "Invalid value for index");
             throw new CustomArrayException("Invalid value for index");

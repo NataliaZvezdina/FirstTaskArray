@@ -20,22 +20,11 @@ public class CustomFileReader {
     private static final Logger logger = LogManager.getLogger();
 
     public List<String> readLines(String filePath) throws CustomArrayException {
-        if (filePath == null) {
-            logger.log(Level.ERROR, "Input filepath is null");
-            throw new CustomArrayException("Input filepath is null");
-        }
+        File file = new File(filePath);
 
-        String absoluteFilePath = new File(filePath).getAbsolutePath();
-        File file = new File(absoluteFilePath);
-
-        if (!file.exists()) {
-            logger.log(Level.ERROR, "File by pathname: " + filePath + " doesn't exist");
-            throw new CustomArrayException("File by pathname: " + filePath + " doesn't exist");
-        }
-
-        if (file.isDirectory()) {
-            logger.log(Level.ERROR, "File by pathname: " + filePath + " is not a regular file");
-            throw new CustomArrayException("File by pathname: " + filePath + " is not a regular file");
+        if (!file.exists() || file.isDirectory()) {
+            logger.log(Level.ERROR, "Incorrect filepath");
+            throw new CustomArrayException("Incorrect filepath");
         }
 
         List<String> lines = new ArrayList<>();
@@ -56,22 +45,11 @@ public class CustomFileReader {
     }
 
     public List<String> readLinesUsingStream(String filePath) throws CustomArrayException {
-        if (filePath == null) {
-            logger.log(Level.ERROR, "Input filepath is null");
-            throw new CustomArrayException("Input filepath is null");
-        }
+        File file = new File(filePath);
 
-        String absoluteFilePath = new File(filePath).getAbsolutePath();
-        File file = new File(absoluteFilePath);
-
-        if (!file.exists()) {
-            logger.log(Level.ERROR, "File by pathname: " + filePath + " doesn't exist");
-            throw new CustomArrayException("File by pathname: " + filePath + " doesn't exist");
-        }
-
-        if (file.isDirectory()) {
-            logger.log(Level.ERROR, "File by pathname: " + filePath + " is not a regular file");
-            throw new CustomArrayException("File by pathname: " + filePath + " is not a regular file");
+        if (!file.exists() || file.isDirectory()) {
+            logger.log(Level.ERROR, "Incorrect filepath");
+            throw new CustomArrayException("Incorrect filepath");
         }
 
         logger.log(Level.INFO, "Start reading file: " + filePath);
